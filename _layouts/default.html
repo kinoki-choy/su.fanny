@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <title>{{ page.title }}</title>
+  </head>
+  <body {% if page.mode != "橫排" %}class="直排"{% endif %}>
+    <main>
+      <h1>{{ page.title }}</h1>
+      <essay>
+        {{ content }}
+      </essay>
+      {% if page.permalink != "/" %}
+        <a href="/" class="back">&larr; 返回目錄</a>
+      {% endif %}
+    </main>
+    <script>
+      let url = new URL(window.location);
+      if (url.searchParams.get('mode') == 'horizontal') {
+        document.getElementsByTagName('body')[0].classList.remove('直排');
+      };
+      console.log('總字數： ' + document.querySelector('essay').innerText.replace(/\n/g, '').length);
+    </script>
+  </body>
+</html>

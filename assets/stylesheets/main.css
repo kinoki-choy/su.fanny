@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap');
+
+body {
+  font-size: 1.25rem;
+  background-color: #fbfbf8;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 100;
+}
+
+img {
+  height:100%;
+}
+
+ul li {
+  list-style-type: decimal-leading-zero;
+  padding: 4px;
+  margin-top: 8px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a.back {
+  font-size: 1rem;
+  color: #999;
+  padding-left: 2rem;
+}
+
+main {
+  width: 600px;
+  color: #444;
+  line-height: 1.9rem;
+  margin: auto;
+  text-align: justify;
+  padding-bottom: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/*  直排  */
+body.直排 {
+  overflow: hidden;
+}
+
+body.直排 h1 {
+  padding-left: 2rem;
+}
+
+body.直排 main {
+  width: 100%;
+  float: right;
+  max-height: 650px;
+  overflow: hidden;
+  overflow-x: scroll;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  margin: 1rem 0 2rem;
+}
+
+body.直排 *::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.直排 *::-webkit-scrollbar-track {
+  background: #eee;
+  border: 7px solid #fbfbf8;
+}
+
+body.直排 *::-webkit-scrollbar-thumb {
+  background-color: #f08080;
+  border-top: 7px solid #fbfbf8;
+  border-bottom: 7px solid #fbfbf8;
+}
