@@ -35,16 +35,15 @@ a:hover {
 a.back {
   font-size: 1rem;
   color: #999;
-  padding-left: 2rem;
 }
 
 main {
-  width: 600px;
+  width: 700px;
   color: #444;
   line-height: 1.9rem;
   margin: auto;
   text-align: justify;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 footer {
@@ -59,6 +58,10 @@ body.直排 {
 }
 
 body.直排 h1 {
+  padding-left: 2rem;
+}
+
+body.直排 a.back {
   padding-left: 2rem;
 }
 
