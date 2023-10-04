@@ -38,12 +38,12 @@ a.back {
 }
 
 main {
-  width: 700px;
+  max-width: 650px;
   color: #444;
   line-height: 1.9rem;
   margin: auto;
   text-align: justify;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 footer {
